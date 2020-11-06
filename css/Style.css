@@ -1,0 +1,192 @@
+#contenedor{
+    padding: 8% 10% 5% 10%;
+}
+/*Color de la barra de menu*/
+#Menu{
+    background-color: rgb(204, 204, 204);
+}
+.LetrasFooter{
+    margin-left: 1%;
+}
+.Principal img{
+    width: 100%;
+}
+.practica{
+    background-color: rgb(187, 178, 139);
+    margin-left: 5px;
+    border-radius: 10px;
+}
+.practica:hover{
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+/*Footer*/
+footer{
+    margin-top: 5%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(194, 194, 194);
+    padding: 3% 0 3% 0;
+    display: flex;
+    flex-flow: column wrap;
+}
+.division{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 80px;
+}
+footer .logo{
+    text-align: center;
+}
+.creditos{
+    text-align: center;
+}
+.creditos .nombre{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: Cambria;
+}
+
+/*Contenido*/
+.articulo{
+    display: flex;
+    flex-flow:row wrap;
+    margin-top: 5%;
+}
+.articulo-2{
+    display: flex;
+    flex-flow:row-reverse wrap;
+    margin-top: 5%;
+}
+.imagen{
+    width: 50%;
+}
+.imagen img{
+    width: 100%;
+}
+.texto{
+    width: 50%;
+    padding: 5%;
+}
+.ButtonMore{
+    border: 1px double rgb(0, 0, 0);
+    padding: 5px;
+}
+.ButtonMore a{
+    color: black;
+    text-decoration: none;
+}
+/*Social Networks*/
+.Content-Social{
+    display:flex;
+    justify-content: flex-end;
+}
+.Contenedor-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 50%;
+    margin-top: 2%;
+}
+.Redes{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    padding:0 5px 0 5px;
+    color: rgb(0, 0, 0);
+}
+.facebook{
+    border: 1px solid rgb(3, 3, 151);
+}
+.twitter{
+    border: 1px solid rgb(0, 110, 255);
+}
+.whatsapp{
+    border: 1px solid rgb(19, 214, 19);
+}
+/*Ventana emergente*/
+#ventana{
+    margin-top: 7%;
+    padding: 1% 1% 5% 1%;
+    color:white;
+    background-color: rgb(75, 68, 100);  
+    width: 40%; 
+    display: none; 
+    flex-flow: column wrap;
+    border-radius: 10px;
+}
+#contenedor-ventana{
+    display: flex;
+    justify-content: center;
+}
+#cerrar{
+    align-self: flex-end;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+#Boton{
+    margin-top: 1%;
+    width: 40%;
+    align-self: flex-end;
+}
+input{
+    width: 70%;
+}
+.CampoMensaje{
+    display: flex;
+    flex-direction: row;
+}
+#CorrectoName{
+    display:none;
+    height: 30px;
+}
+#CorrectoCorreo{
+    display:none;
+    height: 30px;
+}
+#CorrectoTelefono{
+    display:none;
+    height: 30px;
+}
+/*Vista media*/
+@media (max-width: 800px){
+    #contenedor{
+        padding: 15% 0 5% 0;
+    }
+    .Contenedor-redes{
+        width: 60%;
+    }
+    /*Ventana emergente*/
+    #ventana{
+        margin-top: 15%;
+        width: 60%; 
+    }
+}
+/*Vista movil*/
+@media (max-width: 600px){
+    #contenedor{
+        padding: 20% 0 5% 0;
+    }
+    .imagen{
+        width: 100%;
+    }
+    .texto{
+        width: 100%;
+    }
+    .articulo{
+        flex-direction:column-reverse;
+    }
+    .articulo-2{
+        flex-direction:column-reverse;
+    }
+    .Contenedor-redes{
+        width: 100%;
+    }
+    /*Ventana emergente*/
+    #ventana{
+        margin-top: 25%;
+        width: 80%; 
+    }
+}
