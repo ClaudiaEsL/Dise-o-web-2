@@ -1,0 +1,130 @@
+/*Main*/
+#main{
+    display: block;
+}
+/*Mensaje de bienevenida*/
+#Bienvenida{
+    text-align: center;
+}
+#Bienvenida h3{
+    padding: 3%;
+    font-size: 3vw;
+    font-family: 'Grandstander';
+}
+#Bienvenida p{
+    padding-bottom: 5%;
+    font-size: 1.4vw;
+    font-family: 'Domine', serif;
+}
+#Valores, #Videos{
+    margin:3% 0 0 0;
+    text-align: center;
+    display:block;
+}
+#Valores ol li{
+    display: inline-block;
+    width: 250px;
+    padding: 0 0 50px 0;
+    margin:20px;
+    background-color:#ff58335b;
+}
+#Valores img:hover{
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+}
+#Valores ol li h2{
+    padding: 20px 15px 10px 15px;
+    font-family: 'Grandstander', cursive;
+    font-size: 20px;
+}
+
+#Valores ol li img{
+    display:block;
+    margin:auto;
+    width: 70%;
+    border-radius: 120px;
+    box-shadow: 0px 0px 10px;
+}
+#Valores ol li p{
+    text-align:center;
+    margin-top:50px;
+    font-size:15px;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0 10px 0 10px;
+    font-weight: bold;
+}
+#Mensaje h3{
+    margin: 5% 0 0 0;
+    text-align:center;
+    font-size:20px;
+    font-family: 'Domine', serif;
+}
+@media screen and (max-width:600px){
+    #Mensaje h3{
+        font-size:14px;
+        padding: 3%;
+    }
+    /*Mensaje de bienevenida*/
+    #Bienvenida h3{
+        font-size: 24px;
+    }
+    #Bienvenida p{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 14px;
+    }
+}
+#Slider{
+    overflow:hidden;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+#Slider figure{
+    position: relative;
+    width: 500%;
+    margin:0;
+    left: 0;
+    animation: 50s Slider infinite;
+}
+#Slider figure img{
+    width: 20%;
+    float: left;
+}
+@keyframes Slider{
+    0% {
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left: -100%;
+    }
+     50%{
+        left:-200%;
+     }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+@media screen and (max-width:600px){
+    #Slider{
+        width: 100%;
+    }
+}
