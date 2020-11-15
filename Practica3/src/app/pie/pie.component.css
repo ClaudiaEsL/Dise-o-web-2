@@ -10,13 +10,14 @@ footer img{
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 20%;
+    width: 10%;
 }
 /*Dato de direccion*/
 #Direccion{
-    display:inline-block;
+    display:block;
     padding: 10px 0 10px 0;
     width: 80%;
+    margin: auto;
 }
 #Direccion p{
     font-size:15px;
