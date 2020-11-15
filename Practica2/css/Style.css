@@ -1,0 +1,118 @@
+.contenedor{
+    padding: 8% 10% 0 10%;
+}
+footer{
+    margin-top: 5%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(194, 194, 194);
+    padding: 3% 0 3% 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+.LetrasFooter{
+    margin-left: 1%;
+}
+.Principal img{
+    width: 100%;
+}
+#cerrar:hover{
+    background-color: red;
+    color:rgb(255, 255, 255);
+}
+#Numeros:hover{
+    background-color: rgb(40, 136, 27);
+    color:rgb(224, 224, 224);
+}
+/*Footer*/
+footer .logo{
+    margin-left: 30%;
+    text-align: center;
+}
+.articulo{
+    display: flex;
+    flex-flow:row wrap;
+    margin-top: 5%;
+}
+.articulo-2{
+    display: flex;
+    flex-flow:row-reverse wrap;
+    margin-top: 5%;
+}
+.imagen{
+    width: 50%;
+}
+.imagen img{
+    width: 100%;
+}
+.texto{
+    width: 50%;
+    padding: 5%;
+}
+.ButtonMore{
+    border: 1px double rgb(0, 0, 0);
+    padding: 5px;
+    
+}
+.ButtonMore a{
+    color: black;
+    text-decoration: none;
+}
+/*Social Networks*/
+.Content-Social{
+    display:flex;
+    justify-content: flex-end;
+}
+.Contenedor-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 50%;
+    margin-top: 2%;
+}
+.Redes{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    width: 120px;
+    padding:0 5px 0 5px;
+}
+.facebook{
+    border: 1px solid rgb(3, 3, 151);
+}
+.twitter{
+    border: 1px solid rgb(0, 110, 255);
+}
+.whatsapp{
+    border: 1px solid rgb(19, 214, 19);
+}
+/*Vista media*/
+@media (max-width: 800px){
+    .contenedor{
+        padding: 15% 0 0 0;
+    }
+    .Contenedor-redes{
+        width: 60%;
+    }
+}
+/*Vista movil*/
+@media (max-width: 600px){
+    .contenedor{
+        padding: 20% 0 0 0;
+    }
+    .imagen{
+        width: 100%;
+    }
+    .texto{
+        width: 100%;
+    }
+    .articulo{
+        flex-direction:column-reverse;
+    }
+    .articulo-2{
+        flex-direction:column-reverse;
+    }
+    .Contenedor-redes{
+        width: 100%;
+    }
+}
