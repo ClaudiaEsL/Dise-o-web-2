@@ -1,0 +1,106 @@
+/*Selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(150deg, rgba(0, 0, 0, 0.877) 0%, rgba(127, 176, 223, 0.877) 100% );
+    margin: 0 10% 0 10%;
+}
+header{
+    width: 100%;
+    background-color: white;
+}
+/*Imagen de la cabecera*/
+#logo{
+    background-color:  #ff5833;
+    display: block;
+    width: 100%;
+}
+#logo img{
+    display: block;
+    width: 20%;
+}
+/*Menu de navegacion*/
+nav{
+    align-self: flex-end;
+    max-width: 1000px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.Navegacion {
+    display: inline-block;
+    list-style: none;
+	text-align: center;
+    padding: 1%;
+}
+.Navegacion li:first-child {
+    display: block;
+}
+.Navegacion li {
+    position:relative;
+    float:left;
+    display: none;
+    font-size:1.0vmax;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding:3px 0 3px 0;
+    list-style:none;
+    flex: 1;
+}
+.Navegacion a {
+    color: white;
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+    text-decoration: none;
+    letter-spacing:1px;
+}
+.Navegacion li a{
+    display: block;
+}
+/*Tamaño de los botones de navegacion*/
+.n1{
+    background-color: #13677c;
+}
+.menu{
+    background-color:#005b72;
+}
+/*Hover de los botones de navegacion*/
+.n1:hover{
+    background-color: #546cbd7c;
+    transition: 0.9s;
+}
+.n2:hover{
+    background-color: #58184583;
+    transition: 0.9s;
+}
+.Navegacion .n1 a:hover{
+    color:  #000000;
+}
+
+/*Menu desplegables*/
+.Navegacion li ul {
+    display:none;
+    position:absolute;
+}
+/*Items del menu*/
+.Navegacion li ul li{
+    float:none;
+}
+/*Hover del menu*/
+.Navegacion li:hover > ul {
+    display:block;
+    width:100%;
+}
+.Navegacion li ul li:hover {
+    background-color: #aabeff;
+}
+.desplegable a{
+    padding:10px 15px;
+    color: black;
+    font-weight: bold;
+}
+.desplegable{
+    background-color: rgb(255, 255, 255);
+}
